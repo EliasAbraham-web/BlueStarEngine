@@ -9,11 +9,13 @@ namespace BSE
      static void Init();
      static void Free();
      static void Run();
+     public:
+     static void Set_DelayMS(Uint64 diff_ns);
      protected:
      static void Handle();
      static void Update();
      static void Render();
-    }
+    };
 }
 
 #endif
